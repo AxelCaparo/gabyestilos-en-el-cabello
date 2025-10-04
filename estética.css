@@ -1,0 +1,338 @@
+/* ========================================= */
+/* 1. RESET Y ESTILOS BASE (Escritorio / Mobile-First) */
+/* ========================================= */
+* {
+    box-sizing: border-box; /* Fundamental para layouts consistentes */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Fondo principal negro */
+    background-color: #000000;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+/* ========================================= */
+/* 2. HEADER Y NAVEGACIÓN (Estilos Base para Escritorio) */
+/* ========================================= */
+.navegación {
+    /* Color de la marca: Morado/Rosa oscuro */
+    background-color: #A6568A;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.navegación__isotipo {
+    width: 150px;
+    height: 75px; 
+}
+.navegación__isotipo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 5px; 
+    object-fit: contain;
+}
+.navegación__elementos {
+    padding-left: 20px; 
+}
+.navegación__elementos a {
+    text-decoration: none; 
+    color: #2b2b2b; /* Negro oscuro para buen contraste */
+    padding: 0 15px; 
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+.navegación__elementos a:hover {
+    color: #54BFAC; /* Color de acento/hover */
+}
+
+/* TÍTULO PRINCIPAL Y LOGO CIRCULAR */
+.header__contenido_principal {
+    background-color: #A6568A; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px 0; 
+    width: 100%; 
+}
+.header__contenido_principal h1 {
+    margin: 0; 
+    color: #2b2b2b;
+    font-size: 2.8em; 
+    letter-spacing: 5px; 
+    text-transform: uppercase;
+    margin-right: 25px; 
+}
+
+/* Logo Gaby Circular */
+.logotypo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.logotypo img {
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+    object-fit: cover;
+}
+
+/* ========================================= */
+/* 3. SECCIÓN DE UBICACIÓN */
+/* ========================================= */
+.seccion-ubicacion {
+    padding: 40px 20px;
+    text-align: center;
+}
+.seccion-ubicacion h2 {
+    color: white; 
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.seccion-ubicacion p {
+    color: #cccccc; 
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.seccion-ubicacion img {
+    width: 90%; 
+    max-width: 600px;
+    height: auto;
+    border: 2px solid #54BFAC;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ========================================= */
+/* 4. SECCIONES DE SERVICIOS Y PRODUCTOS */
+/* ========================================= */
+.servicios-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center; 
+}
+.servicios-container h2 {
+    color: white; 
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.servicios__grupo h3 {
+    color: #A6568A; 
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin-top: 40px;
+}
+.servicios__grupo img {
+    width: 90%; 
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.servicios__grupo ul {
+    list-style: none; 
+    padding: 0;
+    margin: 10px 0 50px 0; 
+    text-align: center;
+}
+.servicios__grupo ul li {
+    color: #cccccc; 
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+/* SECCIÓN DE PRODUCTOS (GALERÍA FLEX - ESCRITORIO) */
+.productos-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+.productos-container h2 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.productos__galeria {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+.productos__galeria img {
+    width: 100%;
+    max-width: 350px; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(166, 86, 138, 0.4); 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.productos__galeria img:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* ========================================= */
+/* 5. NUEVOS ESTILOS DE SECCIÓN DE CONTACTO */
+/* ========================================= */
+.seccion-contacto {
+    background-color: #2b2b2b; /* Fondo oscuro */
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.seccion-contacto h2 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.seccion-contacto p {
+    color: #cccccc;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* Estilos comunes para los botones */
+.seccion-contacto a {
+    display: block; 
+    max-width: 400px; 
+    margin: 15px auto;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+/* Botón de Llamar (Teléfono) */
+.boton-telefono {
+    background-color: #54BFAC; /* Color de acento */
+    color: #000000;
+}
+
+.boton-telefono:hover {
+    background-color: #43A090;
+}
+
+/* Botón de WhatsApp */
+.boton-whatsapp {
+    background-color: #25D366; /* Verde de WhatsApp */
+    color: white;
+}
+
+.boton-whatsapp:hover {
+    background-color: #1DA851;
+}
+
+/* ========================================= */
+/* 6. DISEÑO RESPONSIVO: MEDIA QUERIES PARA MÓVIL (MAX-WIDTH: 768px) */
+/* ========================================= */
+@media (max-width: 768px) {
+    
+    /* Adaptación de la Navegación (Header) */
+    .navegación {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px 0 0 0; 
+    }
+
+    .navegación__isotipo {
+        width: 100px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .navegación__elementos {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        border-top: 1px solid #54BFAC; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navegación__elementos a {
+        font-size: 0.85em; 
+        padding: 8px 10px; 
+        width: 33.33%; 
+        line-height: 1.2;
+    }
+
+    /* TÍTULO PRINCIPAL */
+    .header__contenido_principal {
+        padding: 10px 0;
+    }
+    .header__contenido_principal h1 {
+        font-size: 2em; 
+        margin-right: 15px; 
+    }
+    .logotypo {
+        width: 100px; 
+        height: 100px;
+    }
+    
+    /* SECCIÓN UBICACIÓN */
+    .seccion-ubicacion p {
+        padding: 0 10px; 
+    }
+    .seccion-ubicacion img {
+        width: 95%; 
+    }
+    
+    /* SECCIÓN DE SERVICIOS y PRODUCTOS */
+    .servicios-container {
+        padding: 10px;
+        margin: 20px auto; 
+    }
+    
+    .servicios__grupo h3 {
+        font-size: 1.5em; 
+    }
+
+    .servicios__grupo img {
+        width: 100%; 
+        max-width: none;
+    }
+    
+    /* SECCIÓN DE PRODUCTOS (Apilamiento vertical) */
+    .productos__galeria {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .productos__galeria img {
+        max-width: 90%; 
+        margin: 0 auto; 
+    }
+
+    /* Contacto en móvil */
+    .seccion-contacto {
+        padding: 40px 10px; /* Menos padding vertical */
+    }
+    .seccion-contacto a {
+        max-width: 95%; /* Botones de contacto ocupan casi todo el ancho */
+    }
+}
